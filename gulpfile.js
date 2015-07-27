@@ -28,7 +28,7 @@ gulp.task('_vendor_js', function() {
   return gulp.src(js_sources)
              .pipe(uglify())
              .pipe(concat('vendor.min.js'))
-             .pipe(gulp.dest('app/static/js'))
+             .pipe(gulp.dest('renatopp/static/js'))
 }) 
 
 /**
@@ -45,7 +45,7 @@ gulp.task('_vendor_css', function() {
   return gulp.src(css_sources)
              .pipe(minify())
              .pipe(concat('vendor.min.css'))
-             .pipe(gulp.dest('app/static/css'))
+             .pipe(gulp.dest('renatopp/static/css'))
 }) 
 
 /**
@@ -57,7 +57,7 @@ gulp.task('_vendor_fonts', function() {
   ];
 
   return gulp.src(fonts_sources)
-             .pipe(gulp.dest('app/static/fonts'))
+             .pipe(gulp.dest('renatopp/static/fonts'))
 }) 
 
 /**
@@ -69,11 +69,11 @@ gulp.task('_vendor', ['_vendor_js', '_vendor_css', '_vendor_fonts']);
  * Compile less
  */
 gulp.task('_less', function() {
-  return gulp.src('app/static/less/index.less')
+  return gulp.src('renatopp/static/less/index.less')
              .pipe(less())
              .pipe(minify())
              .pipe(concat('style.min.css'))
-             .pipe(gulp.dest('app/static/css'))
+             .pipe(gulp.dest('renatopp/static/css'))
 });
 
 /**
@@ -81,8 +81,8 @@ gulp.task('_less', function() {
  */
 gulp.task('_watch', function() {
   var watching = [
-    'app/static/less/**/*.less',
-    'app/templates/**/*.jinja',
+    'renatopp/static/less/**/*.less',
+    'renatopp/templates/**/*.jinja',
   ]
   
   browserSync({
