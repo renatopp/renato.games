@@ -1,0 +1,76 @@
+.thumbnail {
+  padding: 0px;
+  overflow: hidden;
+  border-radius: 0px;
+
+  .rp-image {
+    width               : 100%;
+    height              : 200px;
+    background-size     : cover;
+    background-position : center center;
+    transition          : all .2s ease-in-out;
+
+    &:hover {
+      transform : scale(1.1);
+      opacity   : 0.9;
+    }
+  }
+
+  .rp-caption {
+    background : @color-aqua;
+    position   : absolute;
+    bottom     : 30px;
+    left       : 8px;
+    color      : @color-dark-gray-dark;
+    padding    :   @size-mini @size-small;
+
+    &:before {
+      content        : " ";
+      position       :absolute;
+      width          : 0;
+      height         : 0;
+      bottom         : -.5em;
+      left           : -.00em;
+      pointer-events : none;
+      -webkit-mask   : none;
+      border-top     : .5em solid @color-aqua-dark;
+      border-left    : .5em solid transparent;
+    }
+  }
+
+  .rp-featured {
+    position : absolute;
+    top: 0px;
+    right: 0px;
+    color: @color-bittersweet;
+
+    &-icon {
+      position : absolute;
+      top      : 5px;
+      right    : 25px;
+      font-size: 20px;
+
+    }
+
+    &-background {
+      width    : 0;
+      height   : 0;
+      position : absolute;
+      top      : 55px;
+      right    : 70px;
+      padding  : @size-mini @size-mini;
+
+      &:before {
+        content       : " ";
+        border-bottom :  0px solid transparent;
+        border-left   : 60px solid transparent;
+        border-right  :  0px solid transparent;
+        border-top    : 60px solid @color-sunflower;
+      }
+    }
+  }
+}
+
+.timeline dl dd .events {
+  z-index: 500;
+}

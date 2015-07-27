@@ -1,0 +1,174 @@
+{% extends "layout.jinja" %}
+
+{% block content %}
+
+<div class="rp-home">
+  <div class="rp-home-summary">
+    <div class="rp-container clearfix text-justify">
+      <img src="{{url_for('static', filename='imgs/avatar.jpg')}}" class="pull-left img-circle">
+      <p>Hi!</p>
+      <p>Currently, I am a Ph.D. cadidate in Artificial Intelligence at Federal University of Rio Grande Do Sul (UFRGS), Brazil, researching how to apply machine learning in constrained game agents.</p>
+      <p>My main interests are in game development and game AI, machine learning and web development. I'm also an Open Source enthusiast and passionate for clean, maintainable and effective code.</p>
+    </div>
+  </div>
+
+  <div class="rp-home-timeline timeline">
+    <div class="rp-container clearfix">
+      <!-- <h4 class="text-center">Experience &amp; Education</h4> -->
+      <dl>
+        <dt>current</dt>
+        <dd class="pos-right">
+          <div class="circ"></div>
+          <div class="events">
+            <div class="events-body">
+              <strong>Ph.D. in Computer Science, Artificial Intelligence</strong><br>
+              Federal University of Rio Grande do Sul (UFRGS)<br>
+              <em>current</em><br>
+              <br>
+              <ul class="fa-ul">
+                <li><i class="fa-li fa fa-caret-right"></i> Current project involves Behavior Trees and Machine Learning for constrained agents in games, robotics and general simulation</li>
+                <li><i class="fa-li fa fa-caret-right"></i> Experience on general machine learning</li>
+              </ul>
+            </div>
+          </div>
+        </dd>
+        <dd class="pos-left clearfix">
+          <div class="events">
+            <div class="events-body">
+              <strong>Open Source Developer</strong><br>
+              <em>current</em><br>
+              <br>
+              <ul class="fa-ul">
+                <li><i class="fa-li fa fa-caret-right"></i> Contributed to large projects such as Python and CreateJS, with translation and programming</li>
+                <li><i class="fa-li fa fa-caret-right"></i> Maintain several projects, mainly involving tools and general libraries. <a href="{{url_for('programming')}}">Click here</a> to see my projects.</li>
+              </ul>
+            </div>
+          </div>
+        </dd>
+        <dt>2013</dt>
+        <dd class="pos-right clearfix">
+          <div class="circ"></div>
+          <div class="events">
+            <div class="events-body">
+              <strong>M.Sc. in Computer Science</strong><br>
+              Federal University of Rio Grande do Sul (UFRGS)<br>
+              <em>2011 - 2013</em><br>
+              <br>
+              <ul class="fa-ul">
+                <li><i class="fa-li fa fa-caret-right"></i> Thesis “HIGMN: An IGMN-Based Hierarchical Architecture and its Applications For Robotics Tasks”</li>
+                <li><i class="fa-li fa fa-caret-right"></i> Created a probabilistic hierarchical model to learn complex and abstract behaviors in robotics</li>
+              </ul>
+            </div>
+          </div>
+        </dd>
+        <dt>2011</dt>
+        <dd class="pos-left">
+          <div class="circ"></div>
+          <div class="events">
+            <div class="events-body">
+              <strong>Software Engineer</strong><br>
+              JPTrends<br>
+              <em>2009 - 2011</em><br>
+              <br>
+              <ul class="fa-ul">
+                <li><i class="fa-li fa fa-caret-right"></i> Took part in the architecture and development (back-end and front-end) of multiple projects, including:
+                  <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-angle-right"></i> Web application for public traffic fine processing in medium scale (at the time, it was used by more than 20 cities and processing more than 1 million fines per month)</li>
+                    <li><i class="fa-li fa fa-angle-right"></i> iOS application to generate and validate secure login tokens</li>
+                    <li><i class="fa-li fa fa-angle-right"></i> Web application for business finances</li>
+                  </ul>
+                </li>
+                
+                <li><i class="fa-li fa fa-caret-right"></i> Technologies: TDD, Scrum, Functional tests, C#, Objective-C, C/C++, PHP and PostgreSQL
+                </li>
+              </ul>
+            </div>
+          </div>
+        </dd>
+        <dd class="pos-right clearfix">
+          <div class="events">
+            <div class="events-body">
+              <strong>B.Sc. in Computer Science</strong><br>
+              Centro Universitário Eurípedes de Marília (UNIVEM)<br>
+              <em>2007 - 2011</em><br>
+              <br>
+              <ul class="fa-ul">
+                <li><i class="fa-li fa fa-caret-right"></i> Thesis “Artificial Immune Systems for Computer Games”</li>
+                <li><i class="fa-li fa fa-caret-right"></i> Studied how Artificial Immune System works and how to apply it for computer games</li>
+              </ul>
+            </div>
+          </div>
+        </dd>
+      </dl>
+    </div>
+  </div>
+<!-- 
+  <div class="rp-home-skills">
+    <div class="rp-container clearfix">
+      <h4 class="text-center">Expertize</h4>
+
+      
+    </div>
+  </div>
+ -->
+
+  <div class="rp-home-map">
+    <div id="map-canvas"></div>
+  </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script>
+      function initialize() {
+        var styles = [
+          {
+            stylers: [
+              { hue: "#00ffe6" },
+              { saturation: -20 }
+            ]
+          },{
+            featureType: "road",
+            elementType: "geometry",
+            stylers: [
+              { lightness: 100 },
+              { visibility: "simplified" }
+            ]
+          },{
+            featureType: "road",
+            elementType: "labels",
+            stylers: [
+              { visibility: "off" }
+            ]
+          }
+        ];
+
+        var map = new google.maps.Map(document.getElementById('map-canvas'), {
+          zoom: 2,
+          center: {lat: 7.3861652, lng: 2.7363209},
+          disableDefaultUI: true,
+          scrollwheel: false,
+          styles:styles,
+        });
+
+        var marker = new google.maps.Marker({
+            position: {lat: -30.0359258, lng: -51.2209274},
+            map: map,
+            title: 'Hello World!'
+        });
+
+        var infowindow = new google.maps.InfoWindow({
+          content: 'Porto Alegre, Brazil'
+        });
+
+        google.maps.event.addListener(marker, 'click', function() {
+          infowindow.open(map, marker);
+        });
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+
+
+</div>
+
+{% endblock %}
