@@ -1,0 +1,28 @@
+<div id="rp-contact"
+     class="rp-contact">
+
+  <div class="rp-contact-image">
+    <div class="uk-container">
+      <h2>Contact</h2>
+    
+      <div class="uk-flex uk-flex-center uk-flex-wrap">
+        {{#each data.contact}}
+          <div class="uk-card uk-card-default uk-card-body">
+            <h3 class="uk-card-title">
+              <span uk-icon="icon: {{this.icon}}; ratio: 2"></span>
+            </h3>
+            {{#if this.href}}
+              <a href="{{this.href}}" target="_blank">
+                <span>{{this.label}}</span>
+              </a>
+               <span uk-icon="icon: push; ratio: 1"></span>
+            {{else}}
+              <span>{{this.label}}</span>
+            {{/if}}
+          </div>          
+        {{/each}}
+      </div>
+
+    </div>
+  </div>
+</div>

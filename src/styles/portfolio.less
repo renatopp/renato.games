@@ -1,0 +1,85 @@
+.rp-portfolio {
+  background-color: #fafafa;
+  background-image: linear-gradient(135deg, #fafafa, #dfdfdf);
+  padding: 200px 0;
+
+  &-grid {
+    display: grid;
+    // grid-template-columns: auto auto auto auto auto;
+    // grid-template-rows: auto auto auto auto auto;
+    grid-auto-rows: 1fr;
+
+    grid-template-areas: 
+      "blast blast skald freelo freelo"
+      "blast blast warren warren renatopp"
+      "behavior3 behavior3 smallboard baaramewe democracy"
+      "chess soccer beneath lovecraft creatine"
+      "psi statejs arff aerolito more";
+
+    &::before {
+      content: '';
+      width: 0;
+      padding-bottom: 100%;
+      grid-row: 1 / 1;
+      grid-column: 1 / 1;
+    }
+
+    & > *:first-child {
+      grid-row: 1 / 1;
+      grid-column: 1 / 1;
+    }
+
+    & > * {
+      background: rgba(0,0,0,0.1);
+      border: 1px white solid;
+    }
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+
+    a {
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      // opacity: 0.8;
+      transition: .5s ease all;
+      // filter: opacity(90%) blur(5px);
+      transform: scale(1.1);
+
+      &:hover {
+        opacity: 1;
+        transform: scale(1.2);
+        transition: 5s ease all;
+        // filter: opacity(100%);
+      }
+    }
+
+    small {
+      display: block;
+    }
+
+    .uk-overlay {
+      padding: 5px 10px;
+      opacity: 0;
+      transition: .5s ease all;
+    }
+
+    &:hover {
+      .uk-overlay {
+        opacity: 1;
+        transition: .5s ease all;
+      }
+    }
+  }
+}

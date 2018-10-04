@@ -1,0 +1,187 @@
+{
+  "profile": "Hi! My name is Renato Pereira and I am a Senior Software Engineer who loves Gamedev, AI and Web development. I have 9+ years of experience developing commercial and open source software, working with local and remote teams.",
+  "portfolio": [
+    {
+      "name": "blast",
+      "label": "Letters Blast by Cupcake Entertainment",
+      "description": "Word game for Facebook and mobile",
+      "category": "game",
+      "href": "http://www.cupcakese.com/letters-blast/",
+      "image": "blast.jpg"
+    },
+    {
+      "name": "skald",
+      "label": "Skald Engine",
+      "description": "IoC-based engine above PixiJS",
+      "category": "engine",
+      "href": "https://github.com/skaldengine/skald-engine",
+      "image": "skald.png"
+    },
+    {
+      "name": "freelo",
+      "label": "\"Seu desempenho\" by Riot Games Brazil",
+      "description": "A web site to show user performance statistics in League of Legends",
+      "category": "web",
+      "href": "https://centraldeaprendizado.br.leagueoflegends.com/",
+      "image": "freelo.jpg"
+    },
+    {
+      "name": "warren",
+      "label": "Warren Brasil Platform",
+      "description": "A Brazilian online investment platform",
+      "category": "web",
+      "href": "https://warrenbrasil.com",
+      "image": "warrenbrasil.jpg"
+    },
+    {
+      "name": "smallboard",
+      "label": "Small Board",
+      "description": "A jam game for Ludum Dare",
+      "category": "game",
+      "href": "http://games.renatopp.com/small-board",
+      "image": "small-board.png"
+    },
+    {
+      "name": "behavior3",
+      "label": "Behavior 3",
+      "description": "Engine and visual online editor for Behavior Trees",
+      "category": "tool",
+      "href": "https://github.com/behavior3",
+      "image": "behavior3.png"
+    },
+    {
+      "name": "baaramewe",
+      "label": "Baa Ram Ewe",
+      "description": "A jam game for Ludum Dare",
+      "category": "game",
+      "href": "http://games.renatopp.com/baa-ram-ewe",
+      "image": "baaramewe.jpg"
+    },
+    {
+      "name": "democracy",
+      "label": "Democracy",
+      "description": "A jam game for Ludum Dare",
+      "category": "game",
+      "href": "http://games.renatopp.com/democracy",
+      "image": "democracy.jpg"
+    },
+    {
+      "name": "renatopp",
+      "label": "renatopp.com",
+      "description": "My personal site",
+      "category": "web",
+      "href": "http://renatopp.com",
+      "image": "renatopp.jpg"
+    },
+    {
+      "name": "chess",
+      "label": "Liac Chess",
+      "description": "Chess tool for teaching AI for undergrad classes",
+      "category": "tool",
+      "href": "https://github.com/renatopp/liac-chess",
+      "image": "liac-chess.png"
+    },
+    {
+      "name": "soccer",
+      "label": "Liac Soccer",
+      "description": "Robot soccer tool for teaching AI for undergrad classes",
+      "category": "tool",
+      "href": "https://github.com/renatopp/liac-soccer",
+      "image": "soccer.jpg"
+    },
+    {
+      "name": "beneath",
+      "label": "Beneath the Sea",
+      "description": "A jam game for Ludum Dare",
+      "category": "game",
+      "href": "http://games.renatopp.com/beneath-the-sea",
+      "image": "beneath.jpg"
+    },
+    {
+      "name": "lovecraft",
+      "label": "Love Craft",
+      "description": "A jam game for Ludum Dare",
+      "category": "game",
+      "href": "http://games.renatopp.com/love-craft",
+      "image": "lovecraft.jpg"
+    },
+    {
+      "name": "creatine",
+      "label": "Creatine",
+      "description": "Simple engine using CreateJS",
+      "category": "engine",
+      "href": "https://github.com/renatopp/creatine",
+      "image": "creatine.png"
+    },
+    {
+      "name": "psi",
+      "label": "Psi Robotics",
+      "description": "Component-based tool for testing robotics algorithms",
+      "category": "tool",
+      "href": "https://github.com/renatopp/psi-robotics",
+      "image": "psi.png"
+    },
+    {
+      "name": "statejs",
+      "label": "StateJS",
+      "description": "JavaScript library for fast state machines",
+      "category": "tool",
+      "href": "https://github.com/renatopp/statejs",
+      "image": "statejs.jpg"
+    },
+    {
+      "name": "arff",
+      "label": "Liac Arff",
+      "description": "A Python ARFF reader used in several universities around the world",
+      "category": "tool",
+      "href": "https://github.com/renatopp/liac-arff",
+      "image": "liac-arff.jpg"
+    },
+    {
+      "name": "aerolito",
+      "label": "Aerolito",
+      "description": "Simple chatter bot language",
+      "category": "tool",
+      "href": "https://github.com/renatopp/aerolito",
+      "image": "aerolito.jpg"
+    },
+    {
+      "name": "more",
+      "label": "Know more",
+      "description": "",
+      "category": "more",
+      "href": "https://github.com/renatopp",
+      "image": "more.png"
+    }
+  ],
+  "contact": [
+    {
+      "name" : "email",
+      "icon" : "google",
+      "label": "renato.ppontes@gmail.com",
+      "description": "",
+      "href": null
+    },
+    {
+      "name": "whatsapp",
+      "icon": "whatsapp",
+      "label": "+55 11 98400-5723",
+      "description": "",
+      "href": null
+    },
+    {
+      "name": "github",
+      "icon": "github",
+      "label": "github.com/renatopp",
+      "description": "",
+      "href": "https://github.com/renatopp"
+    },
+    {
+      "name": "linkedin",
+      "icon": "linkedin",
+      "label": "/in/renatopp",
+      "description": "",
+      "href": "https://linkedin.com/in/renatopp"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+@contact-gradient-1: #00f260;
+@contact-gradient-2: #0575e6;
+
+.rp-contact {
+  background-image: linear-gradient(-45deg, @contact-gradient-1 0%, @contact-gradient-2 100%);
+
+  &-image {
+    background-image: url("/assets/imgs/contact.jpg");
+    padding: 200px 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  h2 {
+    color: white;
+  }
+
+  .uk-card {
+    background: white;
+    min-width: 300px;
+    margin: 10px;
+  }
+
+  .uk-card,
+  .uk-card-title {
+    text-align: center;
+  }
+}

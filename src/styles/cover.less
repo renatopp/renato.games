@@ -1,0 +1,90 @@
+// CONFIG
+@cover-gradient-1: #00f260;
+@cover-gradient-2: #0575e6;
+@cover-gradient-angle: 135deg;
+@cover-gradient-size: 100%;
+
+// BASE
+.rp-cover {
+  position: relative;
+  // z-index: 2;
+
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+
+  background-color: @cover-gradient-2;
+  background-image: linear-gradient(@cover-gradient-angle, @cover-gradient-1, @cover-gradient-2);
+  // background-size: @cover-gradient-size;
+  animation: CoverBackgroundAnimation 35s ease infinite;
+
+  color: #fefefe;
+
+  &-content {
+    position: absolute;
+    z-index: 1;
+  }
+
+  &-title {
+    display: block;
+    font-family: @font-header;
+    font-size: 2.5rem;
+    // font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &-subtitle {
+    display: block;
+    font-family: @font-header;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: lowercase;
+  }
+
+  &-links {
+    width: 100%;
+    height: 50px;
+    align-self: flex-end;
+    position: absolute;
+    z-index: 1;
+  }
+
+  &-link {
+    display: inline-block;
+    text-decoration: none;
+    width: 100px;
+    margin: 0 15px;
+    color: #fefefe;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .3s ease all;
+
+    &:hover {
+      text-decoration: none;
+      color: #fefefe;
+      transition: .3s ease all;
+      text-shadow: 0px 0px 2px #FEFEFE;
+    }
+  }
+
+  &-canvas {
+    position: absolute;
+    opacity: 0.15;
+  }
+}
+
+// ANIMATIONS
+@keyframes CoverBackgroundAnimation { 
+    0% {
+      background-size: 100%;
+    }
+    50% {
+      background-size: 150%;
+    }
+    100% {
+      background-size: 100% ;
+    }
+}

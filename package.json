@@ -1,0 +1,32 @@
+{
+  "name": "renatopp.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:renatopp/renatopp.com.git",
+  "author": "Renato Pereira <renato.ppontes@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^1.0.0",
+    "handlebars": "^4.0.12",
+    "handlebars-loader": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server --config=webpack.config.dev.js",
+    "build": "./node_modules/.bin/webpack --config=webpack.config.prod.js"
+  },
+  "dependencies": {
+    "boids": "^2.0.0",
+    "debounce": "^1.2.0",
+    "fps": "^0.0.3"
+  }
+}

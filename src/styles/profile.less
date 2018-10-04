@@ -1,0 +1,37 @@
+.rp-about {
+  padding: 200px 50px;
+
+  &-content {
+    text-align: center;
+  }
+
+  &-avatar {
+    display: inline-block;
+    width: 150px;
+    border: 1px solid #dfdfdf;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 0 fadeout(#dfdfdf, 60%);
+    animation: pulse 4s ease infinite;
+  }
+
+  p {
+    display: block;
+    font-size: 1.25rem;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 fadeout(#dfdfdf, 10%);
+    box-shadow: 0 0 0 0 fadeout(#dfdfdf, 10%);
+  }
+  35% {
+      -moz-box-shadow: 0 0 0 30px fadeout(#dfdfdf, 100%);
+      box-shadow: 0 0 0 30px fadeout(#dfdfdf, 100%);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 fadeout(#dfdfdf, 100%);
+      box-shadow: 0 0 0 0 fadeout(#dfdfdf, 100%);
+  }
+}
