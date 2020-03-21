@@ -17,8 +17,8 @@ module.exports = class CoverBoidSimulation {
   constructor() {
     this.maxAmount = BOID_MAX_AMOUNT
     this.mouseAttractor = [Infinity, Infinity, 100, -1]
-    this.fpsCounter = Fps({every: 10, decay: 0.05})
-    this.offset = {x: 0, y: 0}
+    this.fpsCounter = Fps({ every: 10, decay: 0.05 })
+    this.offset = { x: 0, y: 0 }
     this.flock = Boids({
       boids: BOID_INITIAL_AMOUNT,
       speedLimit: 0.5,
@@ -33,7 +33,7 @@ module.exports = class CoverBoidSimulation {
       ]
     })
 
-    for (let i=0; i<BOID_INITIAL_AMOUNT; i++) {
+    for (let i = 0; i < BOID_INITIAL_AMOUNT; i++) {
       this.flock.boids[i].push(0)
       this.flock.boids[i].push(Math.random() * BOID_MAX_SIZE + BOID_MIN_SIZE)
     }
@@ -59,10 +59,10 @@ module.exports = class CoverBoidSimulation {
     let height = this.domCanvas.height;
 
     if (x < CANVAS_BORDER || y < CANVAS_BORDER) {
-      alpha = Math.min(Math.min(x/CANVAS_BORDER, y/CANVAS_BORDER), alpha)
+      alpha = Math.min(Math.min(x / CANVAS_BORDER, y / CANVAS_BORDER), alpha)
 
     } else if (x > (width - CANVAS_BORDER) || y > (height - CANVAS_BORDER)) {
-      alpha = Math.min(Math.min((width - x)/CANVAS_BORDER, (height - y)/CANVAS_BORDER), alpha)
+      alpha = Math.min(Math.min((width - x) / CANVAS_BORDER, (height - y) / CANVAS_BORDER), alpha)
     }
 
     this.ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`
@@ -78,8 +78,8 @@ module.exports = class CoverBoidSimulation {
     let halfHeight = height / 2
     let length = this.history.length
 
-    for (let i=0; i<length; i++) {
-      for (let j=0; j<this.history[i].length; j++) {
+    for (let i = 0; i < length; i++) {
+      for (let j = 0; j < this.history[i].length; j++) {
         let boid = this.history[i][j]
         let alpha = boid[2] / (length - i)
         let size = boid[3]
@@ -96,7 +96,7 @@ module.exports = class CoverBoidSimulation {
     let boidData = this.flock.boids
 
     let history = []
-    for (let i=0, l=boidData.length, x, y; i<l; i++) {
+    for (let i = 0, l = boidData.length, x, y; i < l; i++) {
       let data = boidData[i]
       let x = data[0]
       let y = data[1]
@@ -104,7 +104,7 @@ module.exports = class CoverBoidSimulation {
       let size = data[7]
 
       if (alpha < 1) {
-        alpha += delta/1000
+        alpha += delta / 1000
       }
       data[0] = x > halfWidth ? -halfWidth : -x > halfWidth ? halfWidth : x
       data[1] = y > halfHeight ? -halfHeight : -y > halfHeight ? halfHeight : y
@@ -123,9 +123,9 @@ module.exports = class CoverBoidSimulation {
     let halfWidth = width / 2
     let halfHeight = height / 2
 
-    for (let i=0; i<this.flock.attractors.length; i++) {
+    for (let i = 0; i < this.flock.attractors.length; i++) {
       let attr = this.flock.attractors[i]
-      
+
       if (attr[4] > 0) {
         this.ctx.fillStyle = `rgba(0, 255, 0, .5)`
       } else {
@@ -158,11 +158,11 @@ module.exports = class CoverBoidSimulation {
   }
 
   onMouseMove(evt) {
-    let halfHeight = this.domCanvas.height/2
-    let halfWidth = this.domCanvas.width/2
+    let halfHeight = this.domCanvas.height / 2
+    let halfWidth = this.domCanvas.width / 2
 
-    this.mouseAttractor[0] = evt.x - halfWidth  - this.offset.x
-    this.mouseAttractor[1] = evt.y - halfHeight  - this.offset.y
+    this.mouseAttractor[0] = evt.x - halfWidth - this.offset.x
+    this.mouseAttractor[1] = evt.y - halfHeight - this.offset.y
   }
 
   onWindowResize() {
@@ -182,17 +182,17 @@ module.exports = class CoverBoidSimulation {
     let halfWidth = width / 2
     let halfHeight = height / 2
 
-    for (let i=0; i<3; i++) {
+    for (let i = 0; i < 3; i++) {
       if (fps <= 56 && this.flock.boids.length > BOID_MIN_AMOUNT) {
         this.flock.boids.pop()
         // this.maxAmount -= 3
-      
+
       } else if (fps >= 60 && this.flock.boids.length < this.maxAmount) {
         this.flock.boids.push([
-          Math.random()*width - halfWidth,
-          Math.random()*height - halfHeight,
-          Math.random()*6.28 - 3.14,
-          Math.random()*6.28 - 3.14,
+          Math.random() * width - halfWidth,
+          Math.random() * height - halfHeight,
+          Math.random() * 6.28 - 3.14,
+          Math.random() * 6.28 - 3.14,
           0,
           0,
           0,

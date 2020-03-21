@@ -1,6 +1,14 @@
 {
-  "profile": "Hi! My name is Renato Pereira and I am a Senior Software Engineer who loves Gamedev, AI and Web development. I have 9+ years of experience developing commercial and open source software, working with local and remote teams.",
+  "profile": "Hi! My name is Renato Pereira and I am a Senior Software Engineer who loves Gamedev, AI and Web development. I have 10+ years of experience developing commercial and open source software, working with local and remote teams.",
   "portfolio": [
+    {
+      "name": "pirate",
+      "label": "A Pirate Story",
+      "description": "My first (published) game!",
+      "category": "game",
+      "href": "https://play.google.com/store/apps/details?id=games.renato.apiratestory",
+      "image": "apiratestory.jpg"
+    },
     {
       "name": "blast",
       "label": "Letters Blast by Cupcake Entertainment",
@@ -156,8 +164,8 @@
   ],
   "contact": [
     {
-      "name" : "email",
-      "icon" : "google",
+      "name": "email",
+      "icon": "google",
       "label": "renato.ppontes@gmail.com",
       "description": "",
       "href": null
