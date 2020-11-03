@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Renato Pereira | Software Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- FONTS  -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Open+Sans:300,400,700" rel="stylesheet">
 
@@ -14,8 +15,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit-icons.min.js"></script>
+
+  <script src="https://unpkg.com/packery@2/dist/packery.pkgd.min.js"></script>
 </head>
-<body>
+
+<body onload="grid()">
 
   <!-- COVER -->
   {{> partials/cover.hbs}}
@@ -33,4 +37,14 @@
   {{> partials/contact.hbs}}
   <!-- END PORTFOLIO -->
 </body>
+
+<script>
+  function grid() {
+    var pckry = new Packery('.grid', {
+      itemSelector: '.grid-item',
+      percentPosition: true
+    });
+  }
+</script>
+
 </html>

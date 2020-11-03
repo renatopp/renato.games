@@ -1,23 +1,39 @@
 <div class="rp-portfolio">
-  
+
   <div class="uk-container">
     <h2 id="rp-portfolio">Portfolio</h2>
-    
-    <div class="rp-portfolio-content">
+
+    <div class="grid">
+      {{#each data.portfolio}}
+      <div class="grid-item {{this.classes}}">
+        <a href="{{this.href}}" class="uk-inline" target="_blank">
+          <img src="assets/imgs/portfolio/{{this.image}}" alt="">
+          <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+            <p>
+              <b>{{this.label}}</b><br /><small>{{this.description}}</small>
+            </p>
+          </div>
+        </a>
+        <div class="shadow"></div>
+      </div>
+      {{/each}}
+    </div>
+
+    {{!-- <div class="rp-portfolio-content">
       <div class="rp-portfolio-grid">
         {{#each data.portfolio}}
-          <div class="rp-portfolio-item" style="grid-area: {{this.name}};">
-            <a href="{{this.href}}" class="uk-inline" target="_blank">
-              <img src="assets/imgs/portfolio/{{this.image}}" alt="">
-              <div class="uk-overlay uk-overlay-primary uk-position-bottom">
-                <p>
-                  <b>{{this.label}}</b> <small>{{this.description}}</small>
-                </p>
-              </div>
-            </a>
-          </div>
+        <div class="rp-portfolio-item" style="grid-area: {{this.name}};">
+          <a href="{{this.href}}" class="uk-inline" target="_blank">
+            <img src="assets/imgs/portfolio/{{this.image}}" alt="">
+            <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+              <p>
+                <b>{{this.label}}</b> <small>{{this.description}}</small>
+              </p>
+            </div>
+          </a>
+        </div>
         {{/each}}
       </div>
-    </div>
+    </div> --}}
   </div>
 </div>

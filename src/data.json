@@ -2,12 +2,31 @@
   "profile": "Hi! My name is Renato Pereira and I am a Senior Software Engineer who loves Gamedev, AI and Web development. I have 10+ years of experience developing commercial and open source software, working with local and remote teams.",
   "portfolio": [
     {
+      "name": "varzeasoccer",
+      "label": "Varzea Soccer",
+      "description": "A full multiplayer soccer game demo made in Unity3D using Photon. Not published.",
+      "category": "game",
+      "href": "http://renato.games",
+      "image": "varzea-soccer.jpg",
+      "classes": ""
+    },
+    {
+      "name": "fallingbricks",
+      "label": "Falling Bricks",
+      "description": "A tricky towers clone made in Unity3D. Not published",
+      "category": "game",
+      "href": "http://renato.games",
+      "image": "falling-bricks.jpg",
+      "classes": ""
+    },
+    {
       "name": "pirate",
       "label": "A Pirate Story",
-      "description": "My first (published) game!",
+      "description": "Be a pirate in my first published game! Made in Unity3D.",
       "category": "game",
       "href": "https://play.google.com/store/apps/details?id=games.renato.apiratestory",
-      "image": "apiratestory.jpg"
+      "image": "apiratestory.jpg",
+      "classes": "grid-item--width2"
     },
     {
       "name": "blast",
@@ -15,15 +34,8 @@
       "description": "Word game for Facebook and mobile",
       "category": "game",
       "href": "http://www.cupcakese.com/letters-blast/",
-      "image": "blast.jpg"
-    },
-    {
-      "name": "skald",
-      "label": "Skald Engine",
-      "description": "IoC-based engine above PixiJS",
-      "category": "engine",
-      "href": "https://github.com/skaldengine/skald-engine",
-      "image": "skald.png"
+      "image": "blast.jpg",
+      "classes": ""
     },
     {
       "name": "freelo",
@@ -31,7 +43,8 @@
       "description": "A web site to show user performance statistics in League of Legends",
       "category": "web",
       "href": "https://centraldeaprendizado.br.leagueoflegends.com/",
-      "image": "freelo.jpg"
+      "image": "freelo.jpg",
+      "classes": "grid-item--width2"
     },
     {
       "name": "warren",
@@ -39,39 +52,8 @@
       "description": "A Brazilian online investment platform",
       "category": "web",
       "href": "https://warrenbrasil.com",
-      "image": "warrenbrasil.jpg"
-    },
-    {
-      "name": "smallboard",
-      "label": "Small Board",
-      "description": "A jam game for Ludum Dare",
-      "category": "game",
-      "href": "http://games.renatopp.com/small-board",
-      "image": "small-board.png"
-    },
-    {
-      "name": "behavior3",
-      "label": "Behavior 3",
-      "description": "Engine and visual online editor for Behavior Trees",
-      "category": "tool",
-      "href": "https://github.com/behavior3",
-      "image": "behavior3.png"
-    },
-    {
-      "name": "baaramewe",
-      "label": "Baa Ram Ewe",
-      "description": "A jam game for Ludum Dare",
-      "category": "game",
-      "href": "http://games.renatopp.com/baa-ram-ewe",
-      "image": "baaramewe.jpg"
-    },
-    {
-      "name": "democracy",
-      "label": "Democracy",
-      "description": "A jam game for Ludum Dare",
-      "category": "game",
-      "href": "http://games.renatopp.com/democracy",
-      "image": "democracy.jpg"
+      "image": "warrenbrasil.jpg",
+      "classes": "grid-item--width2"
     },
     {
       "name": "renatopp",
@@ -79,7 +61,53 @@
       "description": "My personal site",
       "category": "web",
       "href": "http://renatopp.com",
-      "image": "renatopp.jpg"
+      "image": "renatopp.jpg",
+      "classes": ""
+    },
+    {
+      "name": "skald",
+      "label": "Skald Engine",
+      "description": "IoC-based engine above PixiJS",
+      "category": "engine",
+      "href": "https://github.com/skaldengine/skald-engine",
+      "image": "skald.png",
+      "classes": ""
+    },
+    {
+      "name": "smallboard",
+      "label": "Small Board",
+      "description": "A jam game for Ludum Dare",
+      "category": "game",
+      "href": "http://games.renatopp.com/small-board",
+      "image": "small-board.png",
+      "classes": ""
+    },
+    {
+      "name": "behavior3",
+      "label": "Behavior 3",
+      "description": "Engine and visual online editor for Behavior Trees",
+      "category": "tool",
+      "href": "https://github.com/behavior3",
+      "image": "behavior3.gif",
+      "classes": ""
+    },
+    {
+      "name": "baaramewe",
+      "label": "Baa Ram Ewe",
+      "description": "A jam game for Ludum Dare",
+      "category": "game",
+      "href": "http://games.renatopp.com/baa-ram-ewe",
+      "image": "baaramewe.jpg",
+      "classes": ""
+    },
+    {
+      "name": "democracy",
+      "label": "Democracy",
+      "description": "A jam game for Ludum Dare",
+      "category": "game",
+      "href": "http://games.renatopp.com/democracy",
+      "image": "democracy.jpg",
+      "classes": ""
     },
     {
       "name": "chess",
@@ -87,7 +115,8 @@
       "description": "Chess tool for teaching AI for undergrad classes",
       "category": "tool",
       "href": "https://github.com/renatopp/liac-chess",
-      "image": "liac-chess.png"
+      "image": "liac-chess.png",
+      "classes": ""
     },
     {
       "name": "soccer",
@@ -95,7 +124,8 @@
       "description": "Robot soccer tool for teaching AI for undergrad classes",
       "category": "tool",
       "href": "https://github.com/renatopp/liac-soccer",
-      "image": "soccer.jpg"
+      "image": "soccer.jpg",
+      "classes": ""
     },
     {
       "name": "beneath",
@@ -103,7 +133,8 @@
       "description": "A jam game for Ludum Dare",
       "category": "game",
       "href": "http://games.renatopp.com/beneath-the-sea",
-      "image": "beneath.jpg"
+      "image": "beneath.jpg",
+      "classes": ""
     },
     {
       "name": "lovecraft",
@@ -111,7 +142,8 @@
       "description": "A jam game for Ludum Dare",
       "category": "game",
       "href": "http://games.renatopp.com/love-craft",
-      "image": "lovecraft.jpg"
+      "image": "lovecraft.jpg",
+      "classes": ""
     },
     {
       "name": "creatine",
@@ -119,7 +151,8 @@
       "description": "Simple engine using CreateJS",
       "category": "engine",
       "href": "https://github.com/renatopp/creatine",
-      "image": "creatine.png"
+      "image": "creatine.png",
+      "classes": ""
     },
     {
       "name": "psi",
@@ -127,7 +160,8 @@
       "description": "Component-based tool for testing robotics algorithms",
       "category": "tool",
       "href": "https://github.com/renatopp/psi-robotics",
-      "image": "psi.png"
+      "image": "psi.png",
+      "classes": ""
     },
     {
       "name": "statejs",
@@ -135,7 +169,8 @@
       "description": "JavaScript library for fast state machines",
       "category": "tool",
       "href": "https://github.com/renatopp/statejs",
-      "image": "statejs.jpg"
+      "image": "statejs.jpg",
+      "classes": ""
     },
     {
       "name": "arff",
@@ -143,7 +178,8 @@
       "description": "A Python ARFF reader used in several universities around the world",
       "category": "tool",
       "href": "https://github.com/renatopp/liac-arff",
-      "image": "liac-arff.jpg"
+      "image": "liac-arff.jpg",
+      "classes": ""
     },
     {
       "name": "aerolito",
@@ -151,7 +187,8 @@
       "description": "Simple chatter bot language",
       "category": "tool",
       "href": "https://github.com/renatopp/aerolito",
-      "image": "aerolito.jpg"
+      "image": "aerolito.jpg",
+      "classes": ""
     },
     {
       "name": "more",
@@ -159,7 +196,8 @@
       "description": "",
       "category": "more",
       "href": "https://github.com/renatopp",
-      "image": "more.png"
+      "image": "more.png",
+      "classes": ""
     }
   ],
   "contact": [
