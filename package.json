@@ -6,22 +6,22 @@
   "author": "Renato Pereira <renato.ppontes@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^9.1.5",
-    "copy-webpack-plugin": "^4.5.2",
-    "css-loader": "^1.0.0",
+    "autoprefixer": "^10.0.1",
+    "copy-webpack-plugin": "^6.2.1",
+    "css-loader": "^5.0.0",
     "handlebars": "^4.0.12",
     "handlebars-loader": "^1.7.0",
-    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-plugin": "^4.5.0",
     "less": "^3.8.1",
-    "less-loader": "^4.1.0",
-    "postcss-loader": "^3.0.0",
-    "style-loader": "^0.23.0",
-    "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2",
+    "less-loader": "^7.0.2",
+    "postcss-loader": "^4.0.4",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.3.2",
+    "webpack-cli": "^4.1.0",
     "webpack-dev-server": "^3.1.9"
   },
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server --config=webpack.config.dev.js",
+    "start": "./node_modules/.bin/webpack serve --config=webpack.config.dev.js",
     "build": "./node_modules/.bin/webpack --config=webpack.config.prod.js"
   },
   "dependencies": {

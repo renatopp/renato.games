@@ -26,30 +26,15 @@ module.exports = {
         test: /\.less$/,
         use: [
           { loader: 'style-loader' },
-          { loader: 'css-loader' },
-          {
-            loader: 'postcss-loader',
-            options: {
-              ident: 'postcss',
-              plugins: [require('autoprefixer')()]
-            }
-          },
+          { loader: 'css-loader', options: { url: false } },
+          { loader: 'postcss-loader' },
           { loader: 'less-loader' }
         ]
-      }
+      },
     ]
   },
 
   plugins: [
-    new CopyWebpackPlugin([
-      {
-        from: path.resolve(__dirname, 'public/**/*'),
-        to: path.resolve(__dirname, 'build/assets/'),
-        context: 'public',
-        toType: 'dir',
-      }
-    ]),
-
     new HtmlWebpackPlugin({
       inject: 'head',
       minify: true,
@@ -57,6 +42,12 @@ module.exports = {
       templateParameters: {
         data: data
       }
+    }),
+
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'public', to: 'assets'}
+      ]
     })
   ],
 
