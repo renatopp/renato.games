@@ -9,7 +9,7 @@
     "autoprefixer": "^10.0.1",
     "copy-webpack-plugin": "^6.2.1",
     "css-loader": "^5.0.0",
-    "handlebars": "^4.0.12",
+    "handlebars": "^4.7.7",
     "handlebars-loader": "^1.7.0",
     "html-webpack-plugin": "^4.5.0",
     "less": "^3.8.1",
